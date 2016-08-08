@@ -1,0 +1,26 @@
+{
+  "name": "Kaneckt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "concurrently": "^2.2.0",
+    "font-awesome": "^4.6.3",
+    "live-server": "^1.0.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.10.0",
+    "normalize.css": "^4.2.0",
+    "postcss-cli": "^2.5.2"
+  },
+  "scripts": {
+    "css": "postcss -u autoprefixer -r css/styles.css",
+    "sass": "node-sass -o css/ sass/styles.scss && npm run css",
+    "sass:w": "nodemon -e scss -x \"npm run sass\"",
+    "serve": "./node_modules/.bin/live-server --open=html --watch=PATH --host=localhost --port=8080",
+    "start": "concurrently \"npm run sass:w\" \"npm run serve\""
+  },
+  "author": "",
+  "license": "ISC"
+}

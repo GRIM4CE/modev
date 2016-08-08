@@ -1,0 +1,6 @@
+linters:
+  PropertySortOrder:
+    order: smacss
+
+  NestingDepth:
+    max_depth: 4

@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+html,
+body,
+p {
+  font-family: "Montserrat", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif; }
+
+a:link, a:active, a:visited {
+  color: #642c91; }
+
+a:hover, a:link:hover, a:active:hover, a:visited:hover {
+  color: #8445b8; }
+
+.page-center {
+  max-width: 960px; }
+
+.hero {
+  padding: 3rem 4rem;
+  background-color: #838281;
+  color: #fff; }
+
+.hidden {
+  display: none !important; }
+
+.footer-section {
+  background-color: #363534; }
+
+.social-media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .social-media-container i {
+    padding: 1rem .5rem .5rem;
+    color: #fff;
+    font-size: 2rem; }
+    .social-media-container i:hover {
+      color: #642c91; }
+
+.copyright {
+  padding-bottom: .5rem;
+  color: #fff;
+  text-align: center; }
+
+section {
+  padding: 2rem 5rem; }
+  section h1 {
+    margin: 2rem 0; }
+
+.sponsor-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .sponsor-events h1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%; }
+
+.event-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 33%;
+          flex: 1 33%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .event-box img {
+    width: 200px;
+    height: 100%; }
+  .event-box h3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    text-align: center; }
+
+.sponsor-featured {
+  background-color: #000;
+  color: #fff; }
+
+.sponsor-details-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(100, 44, 145, 0.3);
+  z-index: 3; }
+
+.sponsor-details-box {
+  width: 60%;
+  max-height: 80vh;
+  padding: 3rem;
+  background-color: #fff;
+  overflow: scroll; }

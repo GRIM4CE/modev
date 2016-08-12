@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 p {
@@ -35,6 +39,22 @@ a {
   padding: 3rem 4rem;
   background-color: $gray;
   color: $white;
+}
+
+button {
+  @extend %button;
+}
+
+.button-container-center {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px $secondary-color solid;
 }
 
 .hidden {

@@ -1,9 +1,9 @@
 'use strict';
 
-  function sponsorDetails() {
-    $('.sponsor-details-section').removeClass('hidden');
+  function popUp(element) {
+    $(element).siblings('.pop-up-container').removeClass('hidden');
   }
 
-  function closeSponsorDetails() {
-    $('.sponsor-details-section').addClass('hidden');
+  function closePopUp() {
+    $('.pop-up-container').addClass('hidden');
   }

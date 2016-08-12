@@ -7,43 +7,104 @@
     <link rel="stylesheet" href="../css/styles.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/7286eb8817.js"></script>
     <script type="text/javascript" src="../js/scripts.js"></script>
   </head>
   <body>
-    <section class="sponsor-events">
-      <h1>Sponsor an Event Today</h1>
-      <div class="event-box" onclick="sponsorDetails()">
-        <img src="http://cdn2.hubspot.net/hubfs/482737/EXO-Logos/exo-winter-health-b.png" alt="Startups Kiosks">
+    <section class="event-information">
+      <h1>Event Information</h1>
+      <div class="event-box">
+        <div class="img-container"><img src="http://cdn2.hubspot.net/hubfs/482737/Event_Specific_Logos/global-health-forum-logo.png" alt="Global Health Forum"></div>
         <h3>Dec 12-14</h3>
+        <button onclick="popUp(this)">More Information</button>
+        <div class="pop-up-container hidden">
+          <div class="pop-up-box">
+            <i class="fa fa-close closing-box" onclick="closePopUp()"></i>
+            <p class="first-p">The Exo Health Winter Summit is a follow up event to the successful Exo Health Summit that took place May 25-27 in Aspen, CO.</p>
+            <p>This is the essential event for those who are seeking to drive exponential transformation through the use of new technologies and platforms. This schedule will feature executive leaders who will provide strategic insights into their digital transformation initiatives and future plans. The format will be shorter format talks as lead-ins to broader discussions that include the entire audience.</p>
+          </div>
+        </div>
       </div>
-      <div class="event-box" onclick="sponsorDetails()">
-        <img src="http://cdn2.hubspot.net/hubfs/482737/EXO-Logos/exo-winter-health-b.png" alt="Connect Health Kiosks">
-        <h3>Dec 12-14</h3>
-      </div>
-      <div class="event-box" onclick="sponsorDetails()">
-        <img src="http://cdn2.hubspot.net/hubfs/482737/EXO-Logos/exo-winter-health-b.png" alt="Connected Health Sponsorship">
-        <h3>Dec 12-14</h3>
-      </div>
-      <div class="event-box" onclick="sponsorDetails()">
-        <img src="http://cdn2.hubspot.net/hubfs/482737/Event_Specific_Logos/Wearables__Things_Logo_.png" alt="Wearables And Things">
+
+      <div class="event-box">
+        <div class="img-container">
+          <img src="http://cdn2.hubspot.net/hubfs/482737/Event_Specific_Logos/Wearables__Things_Logo_.png" alt="Wearables And Things">
+        </div>
         <h3>Dec 11</h3>
+        <button onclick="popUp(this)">More Information</button>
+        <div class="pop-up-container hidden">
+          <div class="pop-up-box">
+            <i class="fa fa-close closing-box" onclick="closePopUp()"></i>
+            <p class="first-p">Modev is expanding it’s program this year with two distinct tracks - Wearables & Things and the Exo Health Winter Summit. Your registration will get you into both events. Space is limited so please register early.</p>
+            <p>The Wearables & Things conference will feature the world’s leading device, platform and app publishers focused on the healthcare industry. The schedule includes primarily technology leaders from the buy and sell side of the equation to share and discuss their successes, failures, product demos and the road ahead for 2017. Don’t miss this opportunity to learn from what some of the top companies are doing.</p>
+          </div>
+        </div>
       </div>
-      <div class="event-box" onclick="sponsorDetails()">
-        <img src="http://cdn2.hubspot.net/hubfs/482737/EXO-Logos/exo-winter-health-b.png" alt="Exo Health Summit">
+
+      <div class="event-box">
+        <div class="img-container"><img src="http://cdn2.hubspot.net/hubfs/482737/EXO-Logos/exo-winter-health-b.png" alt="Exo Health Summit"></div>
         <h3>Dec 11</h3>
+        <button onclick="popUp(this)">More Information</button>
+        <div class="pop-up-container hidden">
+          <div class="pop-up-box">
+            <i class="fa fa-close closing-box" onclick="closePopUp()"></i>
+            <p class="first-p">The third annual Global Digital Health Forum (formerly the Global mHealth Forum) brings together public and private sector organizations to share the latest evidence, experiences, and lessons learned on new applications and approaches in digital health. This two-day event is presented in partnership with the Global Digital Health Network and USAID</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="sponsor-featured">
-      <h1>Featured Sponsors</h1>
+
+
+
+
+
+    <section class="sponsor-event">
+      <h1>Sponsor An Event Today</h1>
+      <div class="benifits-box">
+        <button onclick="popUp(this)">Exhibit Options Benefits</button>
+        <p>This year, the Connected Health Conference unveils it’s newly designed exhibit floor which reflects the latest evolution of the event and our refined, dedicated focus on an increasingly consumer-centered, technology enabled and collaborative approach to improving health. The new immersive exhibit experience aligns with this year’s event theme – <span><b>Personal Connected Health for All:</b> Expanding Reach, Accelerating Impact.<span></p>
+        <div class="pop-up-container hidden">
+          <div class="pop-up-box">
+            <i class="fa fa-close closing-box" onclick="closePopUp()"></i>
+            <p class="first-p"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benifits-box">
+        <button onclick="popUp(this)">Keynote Sponsorship Benefits</button>
+        <p><b>Put your company in the spotlight!</b> Check out all the opportunities to showcase your company at the conference!</p>
+        <div class="pop-up-container hidden">
+          <div class="pop-up-box">
+            <i class="fa fa-close closing-box" onclick="closePopUp()"></i>
+            <p class="first-p"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benifits-box">
+        <button onclick="popUp(this)">Individual Event and Product Sponsorship Benefits</button>
+        <p>Interested in sponsoring an Individual Event or Product at CHC16? <b>Advertise with us today!</b></p>
+        <div class="pop-up-container hidden">
+          <div class="pop-up-box">
+            <i class="fa fa-close closing-box" onclick="closePopUp()"></i>
+            <p class="first-p"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benifits-box">
+        <button onclick="popUp(this)">Global Digital Health Forum Sponsorship Benefits</button>
+        <p>Sponsor or exhibit at the <b>Global Digital Health Forum</b> — there are sponsorship and exhibit options for all!</p>
+        <div class="pop-up-container hidden">
+          <div class="pop-up-box">
+            <i class="fa fa-close closing-box" onclick="closePopUp()"></i>
+            <p class="first-p"></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="sponsor-details-section hidden">
-      <div class="sponsor-details-box">
-        <h1>Details</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, pariatur. Quisquam, at facere veniam, doloremque, iure quo quasi laborum, dicta blanditiis optio vitae fugit modi iusto praesentium veritatis esse labore?</p>
-        <button onclick="closeSponsorDetails()">Close</button>
-      </div>
-    </div>
   </body>
 </html>

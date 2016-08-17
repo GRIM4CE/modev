@@ -5,7 +5,7 @@ button {
   background-color: #f26725;
   color: #fff; }
   button:hover {
-    background-color: #ff8952; }
+    background-color: #ff8044; }
 
 * {
   box-sizing: border-box; }
@@ -93,22 +93,26 @@ a:hover, a:link:hover, a:active:hover, a:visited:hover {
   cursor: pointer;
   box-sizing: border-box; }
   .ctp-button:hover, .ctp-button:link, .ctp-button:active, .ctp-button:visited, .ctp-button:link:hover, .ctp-button:active:hover, .ctp-button:visited:hover {
-    background-color: #ff8952;
+    background-color: #ff8044;
     color: #fff; }
   .ctp-button i {
     position: absolute;
     top: 0;
     right: 0;
-    width: 1rem;
     padding: .6em .8em;
+    height: 100%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background: rgba(0, 0, 0, 0.25); }
 
 section {
-  padding: 2rem 5rem; }
+  padding: 2rem 1.5rem; }
   section h1 {
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    padding-bottom: .5rem;
+    border-bottom: 3px #1f8fce solid;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
 
 .event-information,
 .sponsor-event {
@@ -122,12 +126,27 @@ section {
     -webkit-box-flex: 1;
         -ms-flex: 1 100%;
             flex: 1 100%; }
-  .event-information p span,
-  .sponsor-event p span {
-    font-style: italic; }
-  .event-information p b,
-  .sponsor-event p b {
-    font-weight: 700; }
+  .event-information p,
+  .sponsor-event p {
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.6; }
+    .event-information p span,
+    .sponsor-event p span {
+      font-style: italic; }
+    .event-information p b,
+    .sponsor-event p b {
+      font-size: 18px;
+      font-weight: 700; }
+  .event-information i,
+  .sponsor-event i {
+    color: #000; }
+
+.event-information {
+  background-color: #1f8fce;
+  color: #fff; }
+  .event-information h1 {
+    border-color: #fff; }
 
 .event-box {
   display: -webkit-box;
@@ -144,7 +163,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2rem 0; }
+  margin: 0 0 2rem; }
   .event-box .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -152,7 +171,11 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 250px; }
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    border-radius: 100%;
+    background-color: #fff; }
   .event-box img {
     max-width: 100%;
     height: auto; }
@@ -162,6 +185,13 @@ section {
             flex: 1 100%;
     margin: 1rem 0;
     text-align: center; }
+  .event-box button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 10px 40px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: lowercase; }
 
 .benifits-box {
   display: -webkit-box;
@@ -172,11 +202,27 @@ section {
           flex: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 2rem 0;
-  border-bottom: 2px #8445b8 solid; }
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 2rem;
+  border-bottom: 2px #1f8fce solid; }
+  .benifits-box button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1f8fce;
+    background-color: initial;
+    color: #1f8fce;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    text-transform: uppercase; }
+    .benifits-box button:hover {
+      background-color: rgba(31, 143, 206, 0.9);
+      color: #fff; }
 
 .pop-up-container {
   display: -webkit-box;
@@ -203,6 +249,10 @@ section {
   padding: 3rem;
   background-color: rgba(255, 255, 255, 0.85);
   overflow: auto; }
+  .pop-up-box .pop-up-img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 2rem; }
   .pop-up-box .closing-box {
     position: absolute;
     top: 60px;
@@ -211,7 +261,9 @@ section {
   .pop-up-box .first-p {
     margin-top: 4rem; }
 
-@media all and (min-width: 620px) {
+@media all and (min-width: 550px) {
+  section {
+    padding: 2rem 3rem; }
   .pop-up-box {
     width: 500px;
     height: auto;
@@ -222,33 +274,68 @@ section {
       right: 1.5rem; }
     .pop-up-box .first-p {
       margin-top: 0; }
-  .benifits-box {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    margin-top: 0;
-    padding-right: 2rem;
-    border-bottom: 0; }
-    .benifits-box button {
-      display: block;
-      width: 100%; } }
+  .benifits-box button {
+    padding: 15px;
+    border-width: 3px;
+    font-size: 18px;
+    letter-spacing: 4px; } }
 
 @media all and (min-width: 747px) {
+  section {
+    padding: 2rem 5rem; }
   .event-box {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 33%;
-            flex: 1 33%; }
+    -ms-flex-preferred-size: calc(33% - 1rem);
+        flex-basis: calc(33% - 1rem);
+    margin: 0 .5rem;
+    padding: 1rem 0 0;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden; }
     .event-box .img-container {
+      width: auto;
       max-width: 300px;
       height: 100px;
-      padding: 0 2rem; }
+      padding: 0 2rem;
+      border-radius: 0;
+      background-color: transparent; }
+    .event-box img {
+      width: 100%;
+      max-width: none;
+      height: auto; }
     .event-box h3 {
       -webkit-box-flex: 1;
           -ms-flex: 1 100%;
               flex: 1 100%;
       margin: .5rem 0 1rem;
-      text-align: center; } }
+      text-align: center; }
+    .event-box button {
+      width: 100%;
+      padding: 10px; }
+  .benifits-box {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin-top: 0;
+    padding: 0 1rem;
+    border-bottom: 0; }
+    .benifits-box button {
+      padding: 10px;
+      border-width: 2px;
+      font-size: 16px;
+      letter-spacing: 2px; } }
 
 @media all and (min-width: 1100px) {
-  .event-box .img-container {
-    margin-bottom: 2rem; } }
+  .event-box {
+    -ms-flex-preferred-size: calc(33% - 2rem);
+        flex-basis: calc(33% - 2rem);
+    margin: 0 1rem; }
+    .event-box .img-container {
+      margin: 1rem 0; }
+  .benifits-box {
+    padding: 0 2rem; }
+    .benifits-box button {
+      padding: 15px;
+      border-width: 3px;
+      font-size: 18px;
+      letter-spacing: 4px; } }

@@ -1,15 +1,12 @@
-.ctp-button {
-  display: inline-block;
+.cfp-button {
   position: relative;
-  margin-right: 2rem;
-  margin-left: auto;
   padding: 12px 27px;
   padding-right: 3.4em;
   border-radius: 5px;
   outline: 0;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   color: $white;
-  font-family: 'Open Sans','Helvetica Neue',helvetica,arial,sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
@@ -19,15 +16,9 @@
   cursor: pointer;
   box-sizing: border-box;
 
-  &:hover,
-  &:link,
-  &:active,
-  &:visited,
-  &:link:hover,
-  &:active:hover,
-  &:visited:hover {
-    background-color: $secondary-color-light;
+  &:hover {
     color: $white;
+    background-color: $primary-color-light;
   }
 
   i {
@@ -35,7 +26,6 @@
     top: 0;
     right: 0;
     padding: .6em .8em;
-    height: 100%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background: rgba($black, .25);

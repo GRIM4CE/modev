@@ -17,28 +17,16 @@ h6 {
   font-family: $head-font; }
 
 a {
-  &:link,
-  &:active,
-  &:visited {
-    color: $primary-color;
-  }
+  color: $primary-color;
 
   &:hover,
-  &:link:hover,
-  &:active:hover,
-  &:visited:hover {
+  &:active {
     color: $primary-color-light;
   }
 }
 
 .page-center {
   max-width: 960px;
-}
-
-.hero {
-  padding: 3rem 4rem;
-  background-color: $gray;
-  color: $white;
 }
 
 button {
@@ -49,6 +37,10 @@ button {
   display: block;
   margin-top: 2rem;
   text-align: center;
+}
+
+.opacity-background {
+  background-color: rgba($black, .5);
 }
 
 .divider {

@@ -1,0 +1,50 @@
+.schedule
+  .date {
+    margin: 1.5rem 0;
+    padding-top: 1.5rem;
+    border-top: 2px solid #8bccb9;
+    font-family: "Merriweather", serif;
+  }
+
+  .time {
+    margin-bottom: 1rem;
+    font-family: "Merriweather", serif;
+    span {
+      color: #13697b;
+    }
+  }
+
+.schedule .secondary,
+.schedule .time .secondary {
+  color: #717171;
+  font-weight: 300; }
+
+.schedule p {
+  margin-top: 0;
+  color: #717171;
+  font-size: 16px;
+  line-height: 1.6; }
+
+a.read-more-button,
+a:link.read-more-button,
+a:active.read-more-button,
+a:visited.read-more-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: .25rem .5rem;
+  border: 1px #8bccb9 solid;
+  border-radius: 20px;
+  color: #8bccb9;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 1.2;
+  cursor: pointer; }
+  a.read-more-button:hover,
+  a:link.read-more-button:hover,
+  a:active.read-more-button:hover,
+  a:visited.read-more-button:hover {
+    border-color: #a1d5c6;
+    color: #a1d5c6; }
+
+.read-more-text {
+  display: none; }

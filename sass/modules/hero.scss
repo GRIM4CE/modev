@@ -1,0 +1,14 @@
+.hero {
+  padding: 0;
+  color: $white;
+}
+
+.top-logo {
+  text-align: center;
+}
+
+@media all and (max-width: 900px) {
+  .mobile-logo {
+    margin-top: 70px;
+  }
+}

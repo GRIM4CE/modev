@@ -1,15 +1,3 @@
-section {
-  padding: 2rem 1.5rem;
-
-  h1 {
-    margin: 2rem 0;
-    padding-bottom: .5rem;
-    border-bottom: 3px $section-background solid;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-}
-
 .event-information,
 .sponsor-event {
   display: flex;
@@ -17,34 +5,6 @@ section {
 
   h1 {
     flex: 1 100%;
-  }
-
-  p {
-    font-size: 17px;
-    font-weight: 200;
-    line-height: 1.6;
-
-    span {
-      font-style: italic;
-    }
-
-    b {
-      font-size: 18px;
-      font-weight: 700;
-    }
-  }
-
-  i {
-    color: $black;
-  }
-}
-
-.event-information {
-  background-color: $section-background;
-  color: $white;
-
-  h1 {
-    border-color: $white;
   }
 }
 
@@ -93,87 +53,29 @@ section {
   align-content: flex-start;
   align-items: center;
   margin: 0 0 2rem;
-  border-bottom: 2px $section-background solid;
+  border-bottom: 2px $background-color solid;
 
   button {
     display: block;
     width: 100%;
     padding: 10px;
-    border: 2px solid $section-background;
+    border: 2px solid $background-color;
     background-color: initial;
-    color: $section-background;
+    color: $background-color;
     font-size: 16px;
     letter-spacing: 2px;
     line-height: 1.4;
     text-transform: uppercase;
 
     &:hover {
-      background-color: rgba($section-background, .9);
+      background-color: rgba($background-color, .9);
       color: $white;
     }
   }
 }
 
-.pop-up-container {
-  display: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba($primary-color, .3);
-  z-index: 3;
-}
-
-.pop-up-box {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  padding: 3rem;
-  background-color: rgba($white, .85);
-  overflow: auto;
-
-  .pop-up-img {
-    display: block;
-    max-width: 200px;
-    margin: 0 auto 2rem;
-  }
-
-  .closing-box {
-    position: absolute;
-    top: 60px;
-    right: 15px;
-    font-size: 1.5rem;
-  }
-
-  .first-p {
-    margin-top: 4rem;
-  }
-}
 
 @media all and (min-width: 550px) {
-  section {
-    padding: 2rem 3rem;
-  }
-
-  .pop-up-box {
-    width: 500px;
-    height: auto;
-    max-height: 80vh;
-    background-color: $white;
-
-    .closing-box {
-      top: 1.25rem;
-      right: 1.5rem;
-    }
-
-    .first-p {
-      margin-top: 0;
-    }
-  }
-
   .benifits-box {
     button {
       padding: 15px;
@@ -185,10 +87,6 @@ section {
 }
 
 @media all and (min-width: 747px) {
-  section {
-    padding: 2rem 5rem;
-  }
-
   .event-box {
     flex-basis: calc(33% - 1rem);
     margin: 0 .5rem;

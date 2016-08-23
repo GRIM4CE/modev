@@ -1,0 +1,23 @@
+.sponsor-title {
+  margin: 0 auto;
+  padding: 2rem;
+  color: $white;
+  font-family: $base-font;
+  text-align: center; }
+
+.sponsors-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+    margin: 0 .5rem 2rem;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: $white;
+  }
+}

@@ -1,0 +1,29 @@
+.section-container {
+  margin: 0 auto;
+  padding: 70px;
+
+  h1 {
+    margin: 0 0 3rem;
+    font-family: $head-font;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .no-margin {
+    margin-bottom: 0;
+  }
+}
+
+.hero-dark {
+  color: $white;
+}
+
+.dark {
+  background-color: $dark-gray;
+  color: $white;
+}
+
+.color {
+  background-color: $background-color;
+  color: $white;
+}

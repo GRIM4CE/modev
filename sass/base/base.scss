@@ -19,8 +19,7 @@ h6 {
 a {
   color: $primary-color;
 
-  &:hover,
-  &:active {
+  &:hover {
     color: $primary-color-light;
   }
 }
@@ -51,4 +50,8 @@ button {
 
 .hidden {
   display: none !important;
+}
+
+.center {
+  text-align: center;
 }

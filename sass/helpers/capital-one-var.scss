@@ -1,0 +1,56 @@
+$black: #12181c;
+$dark-gray: #344553;
+$gray: #cdccd0;
+$light-gray: #e0e0e2;
+
+$primary-color: #b33024;
+$primary-color-light: #cd5020;
+
+$secondary-color: #36a0b8;
+$secondary-color-light: #41b1ca;
+
+$background-color-dark: #0f2136;
+$background-color-medium: #22415a;
+$background-color-light: #355f76;
+$background-color-hue: #41b1ca;
+
+$button-color: #158bbe;
+$button-color-hover: #3bb1db;
+
+@font-face {
+  font-family: 'proxima_novalight_italic';
+  src: url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-lightit-webfont.woff2') format('woff2'),
+       url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-lightit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-reg-webfont.woff2') format('woff2'),
+       url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-reg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-sbold-webfont.woff2') format('woff2'),
+       url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-sbold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_ththin';
+  src: url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-thin-webfont.woff2') format('woff2'),
+       url('http://cdn2.hubspot.net/hubfs/482737/fonts/Capital-One/proximanova-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$base-font: "proxima_nova_rgregular", sans-serif;
+$head-font: "proxima_nova_rgregular", sans-serif;
+$head-font-light: "proxima_nova_ththin", sans-serif;
+$subhead-font: "proxima_nova_ltsemibold", sans-serif;
+$subhead-font-light: "proxima_nova_rgregular", sans-serif;
+$quote-font: "proxima_novalight_italic", sans-serif;
+
+$button-font: "proxima_nova_rgregular", sans-serif;

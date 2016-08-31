@@ -4,8 +4,6 @@
 
   h1 {
     margin: 0 0 3rem;
-    font-family: $head-font;
-    font-weight: 700;
     text-align: center;
   }
 
@@ -14,16 +12,36 @@
   }
 }
 
+.lesser-section-container {
+  margin: 0 auto;
+  padding: 0;
+}
+
 .hero-dark {
   color: $white;
 }
 
-.dark {
-  background-color: $dark-gray;
+.black-background {
+  background-color: $black;
   color: $white;
 }
 
-.color {
-  background-color: $background-color;
+.dark-background {
+  background-color: $background-color-dark;
+  color: $white;
+}
+
+.medium-background {
+  background-color: $background-color-medium;
+  color: $white;
+}
+
+.light-background {
+  background-color: $background-color-light;
+  color: $white;
+}
+
+.color-background {
+  background-color: $background-color-hue;
   color: $white;
 }

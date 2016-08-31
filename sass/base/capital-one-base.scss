@@ -1,0 +1,90 @@
+h1 {
+  font-size: 60px;
+
+  &.light {
+    font-family: $head-font-light;
+  }
+}
+
+h2 {
+  font-size: 36px;
+
+  &.light {
+    font-family: $head-font-light;
+  }
+}
+
+h3 {
+  font-size: 24px;
+
+  &.light {
+    font-family: $head-font-light;
+  }
+}
+
+h4 {
+  font-family: $subhead-font;
+  font-size: 18px;
+
+  &.light {
+    font-family: $subhead-font-light;
+  }
+}
+
+em,
+.quote {
+  font-family: $quote-font;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+ul,
+ol {
+  font-family: $base-font;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+button {
+  position: relative;
+  padding: .75rem 2.25rem;
+  border-radius: 5px;
+  background-color: $button-color;
+  color: $white;
+  font-family: $button-font;
+  font-size: 16px;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+}
+
+header {
+  button {
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 767px) {
+  header {
+    button {
+      margin-right: 2rem;
+      margin-left: auto;
+    }
+  }
+}
+
+
+// MISC //
+@media all and (min-width: 550px) {
+  .pop-up-container {
+    .row-fluid [class*="span"] {
+      float: none !important;
+    }
+  }
+}

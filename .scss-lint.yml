@@ -4,3 +4,9 @@ linters:
 
   NestingDepth:
     max_depth: 4
+
+  ImportantRule:
+    enabled: false
+
+  UrlFormat:
+      enabled: false

@@ -33,22 +33,6 @@
     margin: 1rem auto 2rem;
   }
 
-  p,
-  ul {
-    font-size: 17px;
-    font-weight: 200;
-    line-height: 1.6;
-
-    span {
-      font-style: italic;
-    }
-
-    b {
-      font-size: 18px;
-      font-weight: 700;
-    }
-  }
-
   i {
     color: $black;
   }
@@ -62,26 +46,24 @@
     width: 100%;
     margin-top: 2rem;
     padding: 10px;
-    background-color: $background-color;
+    background-color: $secondary-color;
     color: $white;
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 1.4;
     text-transform: uppercase;
 
     &:hover {
-      background-color: $background-color-light;
+      background-color: $secondary-color-light;
     }
   }
 }
 
 @media all and (min-width: 550px) {
   .pop-up-box {
-    width: 80%;
-    min-width: 500px;
-    max-width: 800px;
+    width: 80% !important;
+    min-width: 500px !important;
+    max-width: 800px !important;
     height: auto;
     max-height: 80vh;
+    margin: 5rem auto !important;
     background-color: $white;
   }
 }

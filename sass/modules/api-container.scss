@@ -5,30 +5,58 @@
 
 .api-box {
   display: flex;
+  position: relative;
   flex-basis: 100%;
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
   margin: 0 1rem 2rem;
 
-  h2 {
-    margin: 0 0 1rem;
-    font-size: 24px;
+  i {
+    display: block;
+    margin: 0 auto;
+    font-size: 4rem;
+    text-align: center;
   }
+
+  h3 {
+    width: 100%;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+}
+
+.api-readmore-container {
+  display: none;
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  width: 400px;
+  padding: 2rem;
+  transform: translateX(-50%);
+  border: 1px $gray solid;
+  border-radius: 5px;
+  background-color: $white;
 
   p {
     margin: 0 0 1rem;
+    color: $black;
   }
 
   a {
+    display: block;
     flex-basis: 100%;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.8;
+    text-align: center;
     text-decoration: none;
   }
 }
-
 
 @media all and (min-width: 768px) {
   .api-box {

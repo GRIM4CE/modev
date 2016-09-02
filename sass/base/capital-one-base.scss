@@ -70,6 +70,17 @@ header {
   }
 }
 
+.white-outline-button {
+  border: 3px $white solid;
+  background-color: transparent;
+  color: $white;
+
+  &:hover {
+    border-color: $button-color-hover;
+    background-color: transparent;
+  }
+}
+
 @media all and (min-width: 767px) {
   header {
     button {

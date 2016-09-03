@@ -17,8 +17,8 @@
   box-sizing: border-box;
 
   &:hover {
-    color: $white;
     background-color: $primary-color-light;
+    color: $white;
   }
 
   i {

@@ -1,0 +1,10 @@
+.nvite-rsvp-widget-container {
+  width: 300px !important; }
+
+.nvite-rsvp-widget-button {
+  background: $secondary-color !important;
+
+  &:hover {
+    background: $secondary-color-light !important;
+  }
+}

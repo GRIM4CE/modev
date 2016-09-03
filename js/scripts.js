@@ -23,11 +23,11 @@ function readMore(readmore) {
 }
 
 $(document).ready(function($){
- $('.persona-image').hover(function(){
-   $(this).parents('.persona-group').find('.persona-description').fadeIn(300);
+ $('.quote-image').hover(function(){
+   $(this).parents('.speaker-container').find('.hover-quote').fadeIn(300);
   });
 
-  $('.persona-image').mouseout(function(){
-    $(this).parents('.persona-group').find('.persona-description').fadeOut(300);
+  $('.quote-image').mouseout(function(){
+    $(this).parents('.speaker-container').find('.hover-quote').fadeOut(300);
   });
 });

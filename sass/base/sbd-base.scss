@@ -1,0 +1,52 @@
+.image-background {
+  background: url('http://cdn2.hubspot.net/hubfs/482737/sbd_Header_Image.jpg') no-repeat center center fixed;
+  background-color: $black;
+  background-size: cover;
+  color: $white;
+}
+
+.landing.long.summit .hero {
+  padding: 0;
+}
+
+.nvite-rsvp-widget-button {
+  margin-bottom: 2rem !important;
+}
+
+header {
+  .cfp-button {
+    padding: 4px 27px;
+    padding-right: 3.4rem;
+  }
+
+  .cfp-tagline {
+    flex-basis: 100%;
+    margin: 10px;
+    color: $white;
+    font-family: $base-font;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (min-width: 768px) {
+  header {
+    .cfp-tagline {
+      flex-basis: inherit;
+      margin: 0;
+      margin-left: 1rem;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+}
+
+@media all and (min-width: 900px) {
+  header {
+    .cfp-tagline {
+      font-size: 1.4rem;
+    }
+  }
+}

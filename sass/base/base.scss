@@ -67,6 +67,10 @@ button {
   flex-wrap: wrap;
 }
 
+.full-flex {
+  flex-basis: 100%;
+}
+
 .two-col-container {
   @extend %two-col;
 }

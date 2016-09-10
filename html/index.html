@@ -1,76 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>modev</title>
-    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/7286eb8817.js"></script>
-    <script type="text/javascript" src="../js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="speakers-container flex-container">
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Christina_Cyr.jpg" alt="Christina Cyr"/></div>
-        <h4 class="quote-text">Christina Cyr</h4>
-        <div class="hover-quote">Getting more women on your technical team</div>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>modev</title>
+  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Jeremy_Foster.png" alt="Jeremy Foster"/></div>
-        <h4 class="quote-text">Jeremy Foster</h4>
-        <div class="hover-quote">Your Mouse is Stealing your Time</div>
-      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/7286eb8817.js"></script>
+  <script type="text/javascript" src="../js/scripts.js"></script>
+</head>
 
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Liz_Rush.jpg" alt="Liz Rush"/></div>
-        <h4 class="quote-text">Liz Rush</h4>
-        <div class="hover-quote">All Aboard! Getting everyone in the same boat when hiring bootcamp graduates & non-traditional developers</div>
-      </div>
-
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Charlene_Angeles.jpg" alt="Charlene Angeles"/></div>
-        <h4 class="quote-text">Charlene Angeles</h4>
-        <div class="hover-quote">Legal Essentials for Developers</div>
-      </div>
-
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Emiko_Hori.jpg" alt="Emiko Hori"/></div>
-        <h4 class="quote-text">Emiko Hori</h4>
-        <div class="hover-quote">Fun in Gerrit Code Review</div>
-      </div>
-
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Greg_Bulmash.jpg" alt="Greg Bulmash"/></div>
-        <h4 class="quote-text">Greg Bulmash</h4>
-        <div class="hover-quote">Relating to developers for fun and profit</div>
-      </div>
-
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Jason_Yee.jpg" alt="Jason Yee"/></div>
-        <h4 class="quote-text">Jason Yee</h4>
-        <div class="hover-quote">Recipes for Success</div>
-      </div>
-
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Joanna_Power.jpg" alt="Joanna Power"/></div>
-        <h4 class="quote-text">Joanna Power</h4>
-        <div class="hover-quote">How to be a SMART Ally</div>
-      </div>
-
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/Brenden_West.jpg" alt="Brenden West"/></div>
-        <h4 class="quote-text">Brenden West</h4>
-        <div class="hover-quote">Don't learn a new language</div>
-      </div>
-
-      <div class="speaker-container">
-        <div class="quote-image"><img src="http://cdn2.hubspot.net/hubfs/482737/speakers-headshots/April_Wensel.jpg" alt="April Wensel"/></div>
-        <h4 class="quote-text">April Wensel</h4>
-        <div class="hover-quote"></div>
-      </div>
+<body>
+  <div class="api-container">
+    <div class="api-box">
+      <img src="http://cdn2.hubspot.net/hubfs/482737/Icons/bankicon.png" alt="Bank Account Starter">
+      <h3>Bank Account Starter</h3>
+      <p>The Bank Account Starter API allows you to create a no-fee no-minimum Capital One 360 Savings account. Easy integration for you, frictionless account creation for your customers – the Bank Account Starter API provides everything you need for your
+        customers to apply, open and fund their online savings account through Capital One 360.</p>
+      <a ui-sref="product-homepage({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/swiftid/homepage/">Learn More</a>
+      <a ui-sref="product-documentation({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/swiftid/documentation/">Documentation</a>
+      <a ui-sref="product-runtest({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/playground/?slug=swiftid">Playground</a>
     </div>
-  </body>
+    <div class="api-box">
+      <img src="http://cdn2.hubspot.net/hubfs/482737/Icons/Rewards-Icon.png" alt="Rewards">
+      <h3>Rewards</h3>
+      <p>The Rewards API allows developers to access information on the miles, points or cash rewards your customers have earned with their Capital One accounts. Based on their individual rewards balances and redemption opportunities, developers can tailor
+        your digital experience in real time.</p>
+      <a ui-sref="product-homepage({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/rewards/homepage/">Learn More</a>
+      <a ui-sref="product-documentation({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/rewards/documentation/">Documentation</a>
+      <a ui-sref="product-runtest({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/playground/?slug=rewards">Playground</a>
+    </div>
+    <div class="api-box">
+      <img src="http://cdn2.hubspot.net/hubfs/482737/Icons/CreditOffers-Icon.png" alt="Credit Offers">
+      <h3>Credit Offers</h3>
+      <p>The Credit Offers API returns a personalized list of Capital One credit card offers in under 60 seconds based on just a few pieces of personal information. Developers can use this API to provide a valuable service for customers, and as an affiliate,
+        developers will benefit as well.</p>
+      <a ui-sref="product-homepage({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/credit-offers/homepage/">Learn More</a>
+      <a ui-sref="product-documentation({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/credit-offers/documentation/">Documentation</a>
+      <a ui-sref="product-runtest({'slug' : slugify(product.default[0].headline)})" href="https://developer.capitalone.com/products/playground/?slug=credit-offers">Playground</a>
+    </div>
+  </div>
+</body>
+
 </html>

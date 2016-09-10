@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: $black !important;
+  background-color: $footer-color !important;
 }
 
 .social-media-container {
@@ -21,31 +21,4 @@
   padding-bottom: .5rem;
   color: $white;
   text-align: center;
-}
-
-@media all and (max-width: 768px) {
-  .footer-section {
-    background-color: $dark-gray;
-  }
-
-  .social-media-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  i {
-    padding: 1rem .5rem .5rem;
-    color: $white;
-    font-size: 2rem;
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
-
-  .copyright {
-    padding-bottom: .5rem;
-    color: $white;
-    text-align: center;
-  }
 }

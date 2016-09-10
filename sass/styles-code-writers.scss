@@ -1,23 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 @import 'helpers/variables';
+@import 'helpers/code-writers-var';
 
-@import 'helpers/capital-one-var';
 @import 'helpers/extends';
 
 @import 'base/base';
-@import 'base/capital-one-base';
-
 @import 'base/header';
 @import 'base/footer';
 
-@import 'modules/hero';
 @import 'modules/section';
-@import 'modules/about';
-@import 'modules/schedule';
-@import 'modules/sponsors';
-@import 'modules/personal-display';
-@import 'modules/api-container';
+@import 'modules/n-vite';
 
-@import 'modules/cta-buttons';
-@import 'modules/pop-up';
+@import 'modules/schedule';
+@import 'modules/speakers';
+@import 'modules/sponsors';
+
+@import 'base/code-writer-base';

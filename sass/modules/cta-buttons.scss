@@ -4,7 +4,7 @@
   padding-right: 3.4em;
   border-radius: 5px;
   outline: 0;
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: $white;
   font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 20px;
@@ -17,7 +17,7 @@
   box-sizing: border-box;
 
   &:hover {
-    background-color: $primary-color-light;
+    background-color: $secondary-color-light;
     color: $white;
   }
 

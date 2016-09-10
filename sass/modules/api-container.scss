@@ -12,21 +12,24 @@
   align-items: flex-start;
   margin: 0 1rem 2rem;
 
-  i {
-    display: block;
+  img {
+    max-width: 120px;
     margin: 0 auto;
-    font-size: 4rem;
-    text-align: center;
   }
 
   h3 {
     width: 100%;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0;
     text-align: center;
   }
 
   button {
     margin: 0 auto;
+  }
+
+  a {
+    flex-basis: 100%;
+    text-align: center;
   }
 }
 

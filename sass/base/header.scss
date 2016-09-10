@@ -7,7 +7,7 @@ header {
   width: 100%;
   height: 90px;
   padding: .5rem;
-  background-color: $black;
+  background-color: $header-color;
   z-index: 2;
 
   .cfp-tagline {
@@ -19,9 +19,14 @@ header {
 
   .logo {
     display: block;
-    max-height: 40px;
+    max-width: 200px;
+    height: auto;
     margin: 15px 100px;
     text-align: center;
+  }
+
+  .cfp-button-container {
+    margin: 0 auto;
   }
 
   .cfp-button {
@@ -76,6 +81,10 @@ header {
     }
 
     .cfp-button {
+      margin: 0 2rem 0 auto;
+    }
+
+    .cfp-button-container {
       margin: 0 2rem 0 auto;
     }
   }

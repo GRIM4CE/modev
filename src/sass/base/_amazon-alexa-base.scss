@@ -1,0 +1,78 @@
+header {
+  background-color: $white;
+  color: $black;
+}
+
+button {
+  border: 0;
+  background-color: $button-color;
+  color: $white;
+  font-family: $button-font;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+}
+
+.sign-up {
+  height: 3.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px rgba($black, .2);
+  cursor: pointer;
+}
+
+
+.landing .webinar-form .hs_cos_wrapper_type_form {
+  box-shadow: 0 0 1px rgba($black, .25);
+}
+
+.hs-button.primary {
+  min-width: inherit;
+  max-width: none;
+  height: 3.5rem;
+  margin: 10px auto 0;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 0;
+  background: $button-color;
+  color: $white;
+  font-family: $button-font;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px rgba($black, .2);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+}
+
+.about-host {
+  text-align: center;
+
+  img {
+    width: 250px;
+    height: 100%;
+    margin: 0 20px 20px 0;
+    border-radius: 100%;
+  }
+
+  h4,
+  p {
+    text-align: left;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .about-host {
+    text-align: left;
+
+    img {
+      float: left;
+    }
+  }
+}

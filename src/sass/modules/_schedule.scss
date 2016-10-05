@@ -1,4 +1,5 @@
 .schedule {
+
   .disclaimer {
     color: $light-gray;
     font-size: 14px;
@@ -61,4 +62,46 @@ a {
 
 .read-more-text {
   display: none;
+}
+
+// Schedule Panels
+.panel-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.panel {
+  flex-basis: 100%;
+
+  h4 {
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+
+  p {
+    padding: 1rem;
+    color: $white;
+
+    &:nth-child(odd) {
+      background-color: $primary-color;
+    }
+
+    &:nth-child(even) {
+      background-color: $primary-color-light;
+    }
+  }
+
+  span {
+    display: block;
+    margin-top: .5rem;
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .panel-3 {
+    flex-basis: 31%;
+    margin: 0 .5rem;
+  }
 }

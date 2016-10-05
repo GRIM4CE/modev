@@ -1,5 +1,11 @@
 $base-font: "Montserrat", sans-serif;
 $head-font: "Merriweather", serif;
+$head-font-light: $head-font;
+$subhead-font: $head-font;
+$subhead-font-light: $head-font;
+$quote-font: $base-font;
+
+$button-font: $base-font;
 
 //Colors
 $white: #fff;
@@ -13,6 +19,11 @@ $primary-color-light: #ffca67;
 
 $secondary-color: #2475b1;
 $secondary-color-light: #308bcf;
+
+$background-color-dark: #1d2224;
+$background-color-medium: #363a3c;
+$background-color-light: #758287;
+$background-color-hue: #6eb2cb;
 
 $header-color: $black;
 $footer-color: $black;

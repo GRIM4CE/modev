@@ -1,11 +1,27 @@
 {
-  "name": "Kaneckt",
+  "name": "modev",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "css": "postcss -u autoprefixer -r css/*.css",
+    "sass": "node-sass -o css/ src/sass/ && npm run css",
+    "sass:w": "nodemon -e scss -x \"npm run sass\"",
+    "js": "babel src/js --watch --out-dir js",
+    "serve": "./node_modules/.bin/live-server --open=html --watch=PATH --host=localhost --port=8080",
+    "start": "concurrently \"npm run sass:w\" \"npm run js\" \"npm run serve\""
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "Jon Leibham (bhamdesigns.com)",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.3.7",
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
     "concurrently": "^2.2.0",
     "font-awesome": "^4.6.3",
     "live-server": "^1.0.0",
@@ -13,14 +29,5 @@
     "nodemon": "^1.10.0",
     "normalize.css": "^4.2.0",
     "postcss-cli": "^2.5.2"
-  },
-  "scripts": {
-    "css": "postcss -u autoprefixer -r css/styles.css",
-    "sass": "node-sass -o css/ sass/styles.scss && npm run css",
-    "sass:w": "nodemon -e scss -x \"npm run sass\"",
-    "serve": "./node_modules/.bin/live-server --open=html --watch=PATH --host=localhost --port=8080",
-    "start": "concurrently \"npm run sass:w\" \"npm run serve\""
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }

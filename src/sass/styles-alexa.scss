@@ -1,19 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
+//helpers
 @import 'helpers/variables';
-@import 'helpers/sbd-var';
-
+@import 'helpers/alexa-var';
 @import 'helpers/extends';
 
+//base
 @import 'base/base';
 @import 'base/header';
 @import 'base/footer';
 
+//modules
+@import 'modules/hero';
 @import 'modules/section';
-@import 'modules/n-vite';
-
+@import 'modules/about';
 @import 'modules/schedule';
-@import 'modules/speakers';
 @import 'modules/sponsors';
+@import 'modules/cta-buttons';
+@import 'modules/pop-up';
 
-@import 'base/sbd-base';
+@import 'base/amazon-alexa-base';

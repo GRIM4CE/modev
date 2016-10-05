@@ -1,5 +1,6 @@
 h1 {
   font-size: 60px;
+  line-height: 1;
 
   &.light {
     font-family: $head-font-light;
@@ -31,8 +32,8 @@ h4 {
   }
 }
 
-em,
-.quote {
+.quote,
+em {
   font-family: $quote-font;
   font-size: 24px;
   line-height: 34px;
@@ -43,8 +44,8 @@ p {
   line-height: 26px;
 }
 
-ul,
-ol {
+ol,
+ul {
   font-family: $base-font;
   font-size: 18px;
   line-height: 26px;
@@ -88,8 +89,18 @@ header {
       margin-left: auto;
     }
   }
-}
 
+  .date-container {
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .date {
+      margin: .5rem 0;
+    }
+  }
+}
 
 // MISC //
 @media all and (min-width: 550px) {

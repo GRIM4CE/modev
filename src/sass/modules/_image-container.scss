@@ -1,0 +1,33 @@
+.img-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.img-box {
+  display: inline-block;
+  width: 31.777%;
+  margin: .5%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .img-box {
+    margin: .4%;
+  }
+}
+
+@media all and (max-width: 660px) {
+  .img-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .img-hide {
+    display: none;
+  }
+}

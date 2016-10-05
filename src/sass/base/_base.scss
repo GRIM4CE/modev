@@ -28,6 +28,10 @@ a {
   max-width: 960px;
 }
 
+.logo-center {
+  text-align: center;
+}
+
 button {
   @extend %button;
 }
@@ -59,6 +63,7 @@ button {
 }
 
 .center {
+  margin: 0 auto;
   text-align: center;
 }
 

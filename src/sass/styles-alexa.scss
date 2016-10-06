@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 //helpers
-@import 'helpers/variables';
+@import 'base/variables';
 @import 'helpers/alexa-var';
-@import 'helpers/extends';
+@import 'base/extends';
 
 //base
 @import 'base/base';

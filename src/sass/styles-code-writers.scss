@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-@import 'helpers/variables';
-@import 'helpers/code-writers-var';
-
-@import 'helpers/extends';
+//helpers
+@import 'base/variables';
+@import 'code-writers/code-writers-var';
+@import 'base/extends';
 
 @import 'base/base';
 @import 'base/header';
@@ -16,4 +16,4 @@
 @import 'modules/speakers';
 @import 'modules/sponsors';
 
-@import 'base/code-writer-base';
+@import 'code-writers/code-writer-base';

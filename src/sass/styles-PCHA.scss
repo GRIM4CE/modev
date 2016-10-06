@@ -1,11 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-@import 'helpers/variables';
-
-//Event Specific
+//helpers
+@import 'base/variables';
 @import 'helpers/PCHA-var';
-
-@import 'helpers/extends';
+@import 'base/extends';
 
 @import 'base/base';
 @import 'base/footer';

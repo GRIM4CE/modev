@@ -1,4 +1,11 @@
+$panel-border-color: $background-color-dark;
+
 .schedule {
+  .schedule-subhead {
+    max-width: 960px;
+    margin: 0 auto 2rem;
+    color: $white;
+  }
 
   .disclaimer {
     color: $light-gray;
@@ -30,6 +37,11 @@
   p {
     margin: 0 0 .5rem;
     color: $gray;
+    line-height: 1.2;
+
+    &.additional-spacing {
+      margin-top: .5rem;
+    }
   }
 
   ul {
@@ -41,7 +53,6 @@
     }
   }
 }
-
 
 a {
   .read-more-button {
@@ -68,11 +79,53 @@ a {
 .panel-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+}
+
+.panel-section-3 {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  border-right: 5px $panel-border-color solid;
+}
+
+.no-right-border {
+  border-right: 0;
+}
+
+.panel-head {
+  flex-basis: 100%;
+  padding: 0 1rem;
+  border-bottom: 5px $panel-border-color solid;
+  background-color: $secondary-color-light;
+  color: $white;
+  text-align: center;
+
+  h4 {
+    margin: 1rem auto;
+  }
 }
 
 .panel {
   flex-basis: 100%;
+  padding: 1rem;
+  border-bottom: 5px $panel-border-color solid;
+
+  &:nth-child(odd) {
+    background-color: $primary-color;
+  }
+
+  &:nth-child(even) {
+    background-color: $primary-color-light;
+  }
+
+  &.break-out-header {
+    background-color: $secondary-color;
+  }
+
+  &.break {
+    background-color: rgba($primary-color, .5);
+  }
 
   h4 {
     margin-bottom: .5rem;
@@ -80,16 +133,8 @@ a {
   }
 
   p {
-    padding: 1rem;
+    margin: 0;
     color: $white;
-
-    &:nth-child(odd) {
-      background-color: $primary-color;
-    }
-
-    &:nth-child(even) {
-      background-color: $primary-color-light;
-    }
   }
 
   span {
@@ -97,11 +142,21 @@ a {
     margin-top: .5rem;
     font-size: 14px;
   }
+
+  .read-more-text {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+
+  button {
+    display: block;
+    width: 150px;
+    margin: 1rem auto 0;
+  }
 }
 
 @media all and (min-width: 800px) {
-  .panel-3 {
-    flex-basis: 31%;
-    margin: 0 .5rem;
+  .panel-section-3 {
+    flex-basis: calc(100% / 3);
   }
 }

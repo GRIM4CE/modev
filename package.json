@@ -8,7 +8,7 @@
     "sass": "node-sass -o css/ src/sass/ && npm run css",
     "sass:w": "nodemon -e scss -x \"npm run sass\"",
     "js": "babel src/js --watch --out-dir js",
-    "serve": "./node_modules/.bin/live-server --open=html --watch=PATH --host=localhost --port=8080",
+    "serve": "./node_modules/.bin/live-server --watch=PATH --host=localhost --port=8080",
     "start": "concurrently \"npm run sass:w\" \"npm run js\" \"npm run serve\""
   },
   "babel": {

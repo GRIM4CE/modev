@@ -259,6 +259,11 @@ header {
   margin: 0 auto;
   text-align: center; }
 
+.schedule .schedule-subhead {
+  max-width: 960px;
+  margin: 0 auto 2rem;
+  color: #fff; }
+
 .schedule .disclaimer {
   color: #d1d1d1;
   font-size: 14px; }
@@ -280,7 +285,10 @@ header {
 
 .schedule p {
   margin: 0 0 .5rem;
-  color: #767676; }
+  color: #767676;
+  line-height: 1.2; }
+  .schedule p.additional-spacing {
+    margin-top: .5rem; }
 
 .schedule ul {
   margin: 0 0 2rem;
@@ -308,32 +316,69 @@ a .read-more-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.panel-section-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 1.5rem; }
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  border-right: 5px #262626 solid; }
+
+.no-right-border {
+  border-right: 0; }
+
+.panel-head {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0 1rem;
+  border-bottom: 5px #262626 solid;
+  background-color: #0069a6;
+  color: #fff;
+  text-align: center; }
+  .panel-head h4 {
+    margin: 1rem auto; }
 
 .panel {
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
+      flex-basis: 100%;
+  padding: 1rem;
+  border-bottom: 5px #262626 solid; }
+  .panel:nth-child(odd) {
+    background-color: #00a7ce; }
+  .panel:nth-child(even) {
+    background-color: #2fc3e6; }
+  .panel.break-out-header {
+    background-color: #0069a6; }
+  .panel.break {
+    background-color: rgba(0, 167, 206, 0.5); }
   .panel h4 {
     margin-bottom: .5rem;
     text-align: center; }
   .panel p {
-    padding: 1rem;
+    margin: 0;
     color: #fff; }
-    .panel p:nth-child(odd) {
-      background-color: #00a7ce; }
-    .panel p:nth-child(even) {
-      background-color: #2fc3e6; }
   .panel span {
     display: block;
     margin-top: .5rem;
     font-size: 14px; }
+  .panel .read-more-text {
+    margin-top: 1rem;
+    font-size: 14px; }
+  .panel button {
+    display: block;
+    width: 150px;
+    margin: 1rem auto 0; }
 
 @media all and (min-width: 800px) {
-  .panel-3 {
-    -ms-flex-preferred-size: 31%;
-        flex-basis: 31%;
-    margin: 0 .5rem; } }
+  .panel-section-3 {
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3); } }
 
 .sponsor-title {
   margin: 0 auto;

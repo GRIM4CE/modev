@@ -1,5 +1,8 @@
 {
+  "browser": true,
   "maxerr": 50,
-
-  "jquery": true
+  "node": true,
+  "esnext": true,
+  "jquery": true,
+  "asi" : true,
 }

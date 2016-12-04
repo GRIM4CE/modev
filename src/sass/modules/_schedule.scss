@@ -1,6 +1,12 @@
 $panel-border-color: $background-color-dark;
+$panel-color: $primary-color;
+$panel-odd-color: $primary-color-light;
+$panel-breakout-color: $secondary-color;
 
 .schedule {
+  max-width: 1200px;
+  margin: 0 auto;
+
   .schedule-subhead {
     max-width: 960px;
     margin: 0 auto 2rem;
@@ -8,35 +14,11 @@ $panel-border-color: $background-color-dark;
   }
 
   .disclaimer {
-    color: $light-gray;
     font-size: 14px;
-  }
-
-  .date {
-    margin: 1.5rem 0;
-    padding-top: 1.5rem;
-    border-top: 2px solid $primary-color;
-  }
-
-  .time {
-    margin-bottom: 1rem;
-
-    span {
-      color: $secondary-color;
-    }
-
-    .secondary {
-      color: $gray;
-    }
-  }
-
-  .secondary {
-    color: $gray;
   }
 
   p {
     margin: 0 0 .5rem;
-    color: $gray;
     line-height: 1.2;
 
     &.additional-spacing {
@@ -51,6 +33,11 @@ $panel-border-color: $background-color-dark;
     li {
       margin: .5rem;
     }
+  }
+
+  .divider-scedule {
+    margin-bottom: 31px;
+    border-bottom: 1px $white dashed;
   }
 }
 
@@ -86,11 +73,15 @@ a {
   flex-basis: 100%;
   flex-wrap: wrap;
   align-content: flex-start;
-  border-right: 5px $panel-border-color solid;
 }
 
-.no-right-border {
-  border-right: 0;
+.event-header {
+  h4 {
+    margin: .5rem 0;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+  }
 }
 
 .panel-head {
@@ -104,6 +95,16 @@ a {
   h4 {
     margin: 1rem auto;
   }
+}
+
+.panel-section-3,
+.panel-section-4,
+.panel-section-5 {
+  flex-basis: 100%;
+}
+
+.no-right-border {
+  border-right: 0;
 }
 
 .panel {
@@ -127,9 +128,15 @@ a {
     background-color: rgba($primary-color, .5);
   }
 
-  h4 {
-    margin-bottom: .5rem;
-    text-align: center;
+  &.event-header {
+    padding: 7px 15px;
+    background-color: $secondary-color-light;
+
+    p {
+      margin: 0;
+      margin-bottom: .5rem;
+      text-align: center;
+    }
   }
 
   p {
@@ -141,11 +148,16 @@ a {
     display: block;
     margin-top: .5rem;
     font-size: 14px;
+
+    &.disclaimer {
+      display: inline-block;
+    }
   }
 
-  .read-more-text {
+  .read-more-content {
     margin-top: 1rem;
     font-size: 14px;
+    line-height: 1.2;
   }
 
   button {
@@ -156,7 +168,25 @@ a {
 }
 
 @media all and (min-width: 800px) {
+  .panel-section-3,
+  .panel-section-4,
+  .panel-section-5 {
+    border-right: 5px $panel-border-color solid;
+  }
+
   .panel-section-3 {
     flex-basis: calc(100% / 3);
+  }
+
+  .panel-section-4 {
+    flex-basis: calc(100% / 4);
+  }
+
+  .panel-section-5 {
+    flex-basis: calc(100% / 5);
+  }
+
+  .no-right-border {
+    border-right: 0;
   }
 }

@@ -1,79 +1,81 @@
-.speakers-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .speaker-container {
   position: relative;
   flex-basis: 100%;
+}
 
-  .quote-image {
-    width: 128px;
-    height: 128px;
-    margin: 0 auto;
-    opacity: 1 !important;
+.speaker-image {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
 
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 100%;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+  }
+}
+
+.speaker-name {
+  margin: 1rem 0 0;
+}
+
+.speaker-title {
+  margin: .5rem 0 2rem;
+  font-family: $base-font;
+  font-size: 15px;
+}
+
+.speaker-name,
+.speaker-title {
+  color: $white;
+  text-align: center;
+}
+
+.speaker-description {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  left: 0;
+  max-width: 300px;
+  margin: 0 auto !important;
+  padding: 10px 15px 15px;
+  border-radius: 4px;
+  background: $white;
+  color: $dark-gray;
+  font-size: 13px;
+  line-height: 1.4;
+  box-shadow: 0 3px 7px rgba($black, .2);
+  z-index: 3;
+
+  p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
-  .quote-text {
-    margin: 1rem 0 0;
-  }
-
-  .speaker-title {
-    margin: .5rem 0 2rem;
-    font-family: $base-font;
-    font-size: 15px;
-  }
-
-  .speaker-event-title {
-    margin: .5rem 0;
-    font-size: 15px;
-  }
-
-  .quote-text,
-  .speaker-title {
-    color: $white;
-    text-align: center;
-  }
-
-  .hover-quote {
-    display: none;
+  &::before {
     position: absolute;
-    top: 140px;
+    top: -16px;
     right: 0;
     left: 0;
-    max-width: 300px;
     margin: 0 auto !important;
-    padding: 10px 15px 15px;
-    border-radius: 4px;
-    background: $white;
-    color: $dark-gray;
-    font-size: 13px;
-    box-shadow: 0 3px 7px rgba($black, .2);
-    z-index: 30;
+    color: $white;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 25px;
+    text-align: center;
+    content: '\f0d8';
+  }
 
-    p {
-      margin: 0;
-      font-size: 13px;
-    }
+  &[data-state=hidden] {
+    transform: scale(.1);
+    transform-origin: top;
+    transition: all .6s;
+    opacity: 0;
+  }
 
-    &::before {
-      position: absolute;
-      top: -16px;
-      right: 0;
-      left: 0;
-      margin: 0 auto !important;
-      color: $white;
-      font: normal normal normal 14px/1 FontAwesome;
-      font-size: 25px;
-      text-align: center;
-      content: '\f0d8';
-    }
+  &[data-state=visible] {
+    transition: all .2s;
+    opacity: 1;
   }
 }
 

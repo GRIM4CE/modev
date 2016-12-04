@@ -1,11 +1,36 @@
-.companies {
+.featured-companies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 1050px;
   margin: 0 auto;
+}
 
-  .company-box {
+.company-box {
+  max-width: 175px;
+  margin: 1.5rem;
+  text-align: center;
+
+  .company {
+    width: 100%;
+    padding: 12.5px;
+    border: 8px solid rgba($secondary-color, .3);
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: inset 0 0 3px rgba($black, .2);
+  }
+}
+
+  /* OLD Styles
+
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1050px;
+    margin: 0 auto;
+
+   .company-box {
     flex-basis: 50%;
     margin: 1rem 0;
   }
@@ -52,4 +77,4 @@
       padding: 30px;
     }
   }
-}
+} */

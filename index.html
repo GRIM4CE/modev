@@ -6,7 +6,7 @@
   <title>modev</title>
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/7286eb8817.js"></script>
 </head>
 
@@ -15,7 +15,7 @@
   <ul id="linksToPages"></ul>
 
   <script>
-    var pages = ["API-Section", "form-pop", "host", "partners", "podcast-audio", "schedule", "speakers"]
+    var pages = ["API-Section", "form-pop", "misc", "partners", "podcast", "schedule", "schedule-health", "speakers"]
 
     pages.forEach(function(page){
       var pageLink = '<li><a href=\"html/' + page + '.html\">'+ page +'</a></li>'

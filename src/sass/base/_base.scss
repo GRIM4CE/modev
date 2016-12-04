@@ -2,22 +2,27 @@
   box-sizing: border-box;
 }
 
-html,
 body,
+html,
 p {
   font-family: $base-font;
 }
 
 h1,
-h2,
+h2 {
+  font-family: $head-font;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  font-family: $head-font; }
+  font-family: $base-font;
+}
 
 a {
   color: $primary-color;
+  text-decoration: none;
 
   &:hover {
     color: $primary-color-light;
@@ -86,4 +91,224 @@ button {
 
 .five-col-container {
   @extend %five-col;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  padding: .5rem;
+  background-color: $header-color;
+  z-index: 10;
+
+  .cfp-tagline {
+    flex-basis: 100%;
+    margin: 10px;
+    color: $white;
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 15px 100px;
+    text-align: center;
+  }
+
+  .cfp-button-container {
+    margin: 0 auto;
+  }
+
+  .cfp-button {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 12px 3.4em 12px 27px;
+    border-radius: 5px;
+    outline: 0;
+    background-color: $secondary-color;
+    color: $white;
+    text-shadow: 1px 1px 0 rgba($black, .05);
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba($black, .1);
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: $secondary-color-light;
+      color: $white;
+    }
+
+    i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .6em .8em;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: rgba($black, .25);
+    }
+  }
+}
+
+.section-container {
+  padding: 2rem 1rem;
+
+  h1 {
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+
+  .no-margin {
+    margin-bottom: 0;
+  }
+}
+
+.lesser-section-container {
+  padding: 1rem;
+}
+
+.hero-dark {
+  color: $white;
+}
+
+.black-background {
+  background-color: $black;
+  color: $white;
+}
+
+.dark-background {
+  background-color: $background-color-dark;
+  color: $white;
+}
+
+.medium-background {
+  background-color: $background-color-medium;
+  color: $white;
+}
+
+.light-gray-background {
+  background-color: $background-light-gray;
+  color: $black;
+}
+
+.light-background {
+  background-color: $background-color-light;
+  color: $white;
+}
+
+.color-background {
+  background-color: $background-color-hue;
+  color: $white;
+}
+
+.about-section {
+  a {
+    display: inherit;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.sponsor-title {
+  margin: 0 auto;
+  padding: 2rem;
+  color: $white;
+  text-align: center;
+}
+
+.sponsors-container {
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 0 .5rem 2rem;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: $white;
+  }
+}
+
+.footer-section {
+  background-color: $footer-color !important;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+
+  i {
+    padding: 1rem .5rem .5rem;
+    color: $white;
+    font-size: 2rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.copyright {
+  padding-bottom: .5rem;
+  color: $white;
+  text-align: center;
+}
+
+@media all and (min-width: 450px) {
+  .section-container {
+    padding: 2rem 1rem;
+
+    h1 {
+      margin: 0 0 2rem;
+    }
+  }
+}
+
+@media all and (min-width: 767px) {
+  header {
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+
+    .cfp-tagline {
+      flex-basis: auto;
+      align-self: center;
+      margin: 0 0 0 2rem;
+    }
+
+    .logo {
+      flex-basis: auto;
+      align-self: center;
+      margin: 10px 0 10px 2rem;
+    }
+
+    .cfp-button {
+      margin: 0 2rem 0 auto;
+    }
+
+    .cfp-button-container {
+      margin: 0 2rem 0 auto;
+    }
+  }
+
+  .section-container {
+    padding: 3rem;
+  }
+
+  h1 {
+    margin: 0 0 3rem;
+  }
+
+  .lesser-section-container {
+    padding: 1.5rem;
+  }
 }

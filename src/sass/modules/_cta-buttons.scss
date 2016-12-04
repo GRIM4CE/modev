@@ -1,7 +1,18 @@
+.nvite-rsvp-widget-container {
+  width: 300px !important;
+}
+
+.nvite-rsvp-widget-button {
+  background: $secondary-color !important;
+
+  &:hover {
+    background: $secondary-color-light !important;
+  }
+}
+
 .cfp-button {
   position: relative;
-  padding: 12px 27px;
-  padding-right: 3.4em;
+  padding: 12px 3.4em 12px 27px;
   border-radius: 5px;
   outline: 0;
   background-color: $secondary-color;
@@ -22,9 +33,12 @@
   }
 
   i {
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
+    align-items: center;
     padding: .6em .8em;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;

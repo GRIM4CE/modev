@@ -1,0 +1,13 @@
+.blog-cta-button {
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  background-color: $secondary !important;
+  color: $white !important;
+  text-decoration: none;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $secondary-light !important;
+    color: $white !important;
+  }
+}

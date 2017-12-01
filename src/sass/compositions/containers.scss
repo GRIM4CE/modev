@@ -1,0 +1,31 @@
+.section-container {
+  padding: 2rem $gutter;
+
+  h1 {
+    margin: 0 0 1rem;
+  }
+}
+
+.lesser-section-container {
+  padding: 1rem;
+}
+
+.primary-background {
+  background-color: $primary;
+  color: $white;
+}
+
+.secondary-background {
+  background-color: $secondary;
+  color: $white;
+}
+
+@media all and (min-width: 53.125rem) {
+  .section-container {
+    padding: 5rem $gutter;
+  }
+
+  .lesser-section-container {
+    padding: 1.5rem;
+  }
+}

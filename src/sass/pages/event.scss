@@ -1,0 +1,40 @@
+.event-excerpt-container {
+  margin: 1.5rem 0;
+}
+
+.event-excerpt-component {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.event-image-container {
+  margin: 0 auto 1rem;
+}
+
+.event-content-container {
+  h3 {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: .5rem 0;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .event-image-container {
+    flex: 1 25%;
+    margin: inherit;
+  }
+
+  .event-content-container {
+    flex: 1 70%;
+    margin-left: 2rem;
+  }
+}

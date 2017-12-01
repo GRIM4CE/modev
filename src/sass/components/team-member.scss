@@ -1,0 +1,131 @@
+.team-members-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 1rem 1rem;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+  }
+}
+
+.team-member-container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.team-member-opacity-layer {
+  order: 2;
+  width: 100%;
+}
+
+.team-member-img {
+  order: 1;
+  width: 100%;
+  z-index: 1;
+}
+
+.team-member-name,
+.team-member-role {
+  line-height: 1.2;
+  hyphens: none;
+}
+
+.team-member-name {
+  margin: .5rem 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.team-member-role {
+  display: none;
+}
+
+.team-member-icon {
+  display: none;
+}
+
+@media all and (min-width: 37.5rem) {
+  .team-members-container {
+    @supports (display: grid) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+    }
+  }
+
+  .team-member-container {
+    flex-wrap: nowrap;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+
+    &:hover {
+      .team-member-opacity-layer {
+        opacity: 1;
+      }
+    }
+  }
+
+  .team-member-opacity-layer {
+    position: absolute;
+    order: 0;
+    height: 100%;
+    padding: 1rem;
+    transition: .2s opacity;
+    background-color: rgba($tertiary, .8);
+    color: $white;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .team-member-img {
+    order: 0;
+    width: 100%;
+  }
+
+  .team-member-name {
+    margin: 0;
+    margin-bottom: .25rem;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .team-member-role {
+    display: inherit;
+    font-size: 14px;
+  }
+
+  .team-member-icon {
+    display: inherit;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: $primary;
+    font-size: 36px;
+  }
+}
+
+@media all and (min-width: 50rem) {
+  .team-members-container {
+    @supports (display: grid) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+@media all and (min-width: 70rem) {
+  .team-members-container {
+    @supports (display: grid) {
+      grid-template-columns: repeat(6, 176px);
+      justify-content: center;
+    }
+  }
+}

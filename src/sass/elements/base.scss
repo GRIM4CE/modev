@@ -1,0 +1,52 @@
+*,
+body,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  color: $body-color;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
+  &[data-state="inactive"] {
+    overflow: hidden;
+  }
+}
+
+.page-center {
+  max-width: 1100px;
+  margin: 0 auto !important;
+  padding: 0 20px;
+  float: none !important;
+}
+
+.modal-opacity {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: rgba($white, .6);
+  z-index: 10;
+
+  &[data-state="inactive"] {
+    display: none;
+  }
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+//Hubspot Specific
+.widget-type-raw_jinja {
+  min-height: 0 !important;
+} // Removes space from Hubl Template?
+
+.row-fluid [class*="span"] {
+  min-height: inherit !important;
+}

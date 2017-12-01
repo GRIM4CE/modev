@@ -1,0 +1,9 @@
+$gutter: 1.5rem / 2;
+
+%gutter {
+  padding: $gutter;
+}
+
+%gutter-margin {
+  margin: $gutter;
+}

@@ -1,0 +1,52 @@
+.single-form-page {
+  .logo {
+    text-align: center;
+  }
+
+  .hs-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hs-form-field {
+    margin-top: .75rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    label {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+
+  .hs-error-msgs {
+    margin: .25rem 0 .5rem;
+
+    label {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+  .input {
+    input,
+    textarea {
+      margin-bottom: 0;
+    }
+  }
+
+  .hs-button.primary {
+    margin-top: 1.5rem;
+    padding: .75rem 0;
+    border: 0;
+    background-color: $secondary;
+    color: $white;
+    appearance: none;
+
+    &:hover {
+      background-color: $secondary-light;
+    }
+  }
+}

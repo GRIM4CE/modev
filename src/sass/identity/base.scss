@@ -7,7 +7,6 @@ html {
 body {
   height: 100vh;
   margin: 0;
-  color: $body-color;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
@@ -17,24 +16,15 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 .page-center {
   max-width: 1100px;
   margin: 0 auto !important;
   padding: 0 20px;
   float: none !important;
-}
-
-.modal-opacity {
-  position: fixed;
-  top: 60px;
-  width: 100%;
-  height: calc(100vh - 60px);
-  background-color: rgba($white, .6);
-  z-index: 10;
-
-  &[data-state="inactive"] {
-    display: none;
-  }
 }
 
 .center {

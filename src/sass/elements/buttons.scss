@@ -1,6 +1,6 @@
 %button {
-  @extend %gutter-margin;
   display: block;
+  margin: .75rem;
   padding: 10px 35px;
   border: 0;
   border-radius: 5px;
@@ -29,6 +29,24 @@ button,
 
 .button-container {
   width: 100%;
+}
+
+.cta-button {
+  @extend %button;
+  display: inline-block;
+
+  &.convert {
+    background-color: $success400;
+
+    &:hover {
+      background-color: $success600;
+    }
+  }
+}
+
+a.cta-button,
+a.cta-button:hover {
+  color: $white !important;
 }
 
 @media all and (min-width: 37.5rem) {

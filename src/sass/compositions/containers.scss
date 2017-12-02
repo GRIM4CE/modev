@@ -1,5 +1,5 @@
 .section-container {
-  padding: 2rem $gutter;
+  padding: 2rem 1.5rem;
 
   h1 {
     margin: 0 0 1rem;
@@ -22,7 +22,7 @@
 
 @media all and (min-width: 53.125rem) {
   .section-container {
-    padding: 5rem $gutter;
+    padding: 5rem 3rem;
   }
 
   .lesser-section-container {

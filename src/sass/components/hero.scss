@@ -1,0 +1,30 @@
+.hero {
+  width: 100%;
+  background: 100% 100% cover no-repeat $black;
+  color: $white;
+}
+
+.hero-opacity {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 5rem;
+  background-color: rgba($black, .6);
+}
+
+.hero-logo {
+  img {
+    width: 90% !important;
+    max-width: 400px;
+    text-align: center;
+  }
+}
+
+.hero-header {
+  text-align: center;
+}
+
+.hero-cta-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

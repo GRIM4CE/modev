@@ -32,6 +32,16 @@ img {
   text-align: center;
 }
 
+*[data-device="desktop"] {
+  display: none !important;
+}
+
+@media all and (min-width: 37.5rem) {
+  *[data-device="desktop"] {
+    display: inherit !important;
+  }
+}
+
 //Hubspot Specific
 .widget-type-raw_jinja {
   min-height: 0 !important;

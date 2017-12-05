@@ -11,45 +11,55 @@
   <script src="https://use.fontawesome.com/7286eb8817.js"></script>
 
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    main {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #cdcdcd;
+    }
+
+    .container {
+      width: 400px;
+      padding: 2rem;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    li {
+      font-size: 24px;
+      padding: 1rem 0;
+    }
+
+    a {
+      color: #6e6e6e;
+      font-weight: 200;
+    }
+  </style>
 </head>
 
 <body>
-
-  <div class="hero" style="background-image: url('https://www.modev.com/hubfs/Code%20Writers%20Workshop/17.04.28%20Seattle/CodeWriter'sWorkshop%20cropped.jpg?t=1512168554238')">
-    <div class="hero-opacity">
-      <div class="hero-logo">
-        <img src="https://www.modev.com/hs-fs/hubfs/Modev/Logos/modev-w.png">
-      </div>
-      <h1 class="hero-header">You set the goal, Modev does the rest.</h1>
-      
-      <div class="hero-cta-container">
-        <a href="#about" class="cta-button info">Learn More</a>
-        <a href="#form" class="cta-button convert">Get Involved</a>
-      </div>
+  <main>
+    <div class="container">
+      <h1>Modev</h1>
+      <ul>
+        <li>
+          <a href="one-day-event.html">One Day Event</a>
+        </li>
+        <li>
+          <a href="hackathon.html">Hackathon</a>
+        </li>
+        <li>
+          <a href="recruitment.html">Recruitment</a>
+        </li>
+      </ul>
     </div>
-  </div>
-
-  <div class="section-container">
-    <p>Technology moves at the speed of light -- Modev puts your initiatives at the tip of the spear. With nearly a decade of experience, Modev is a trusted technology community builder, producing powerful and engaging events. We’ve partnered with some of the largest brands in the world for multi-city, 1-day tours bringing together technologists and developers to learn, create and engage. The community building doesn’t stop there. Our team of specialists will create strategic plans to nurture and engage long after the skills building ends.
-    </p>
-  </div>
-
-  <footer class="footer">
-    <div class="footer-copyright">© {{ year }} <a href="http://www.modev.com/"> Modev.com</a></div>
-
-    <div class="footer-navigation">
-      <a href="https://www.modev.com/code-of-conduct" target="_blank">Code of Conduct</a>
     </div>
-
-    <div class="footer-social-media">
-      <a href="https://www.facebook.com/gomodev/" target="_blank"><i class="fa fa-facebook-square"></i></a>
-      <a href="https://twitter.com/GoModev" target="_blank"><i class="fa fa-twitter-square"></i></a>
-      <a href="https://www.linkedin.com/company/modev/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-    </div>
-  </footer>
-
-
-  <script src="bundle.js"></script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>

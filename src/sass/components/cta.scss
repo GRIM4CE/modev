@@ -1,13 +1,13 @@
 .blog-cta-button {
   padding: .5rem 1rem;
   border-radius: 5px;
-  background-color: $secondary !important;
+  background-color: $secondary400 !important;
   color: $white !important;
   text-decoration: none;
   cursor: pointer;
   
   &:hover {
-    background-color: $secondary-light !important;
+    background-color: $secondary200 !important;
     color: $white !important;
   }
 }

@@ -80,7 +80,7 @@
     height: 100%;
     padding: 1rem;
     transition: .2s opacity;
-    background-color: rgba($tertiary, .8);
+    background-color: rgba($tertiary400, .8);
     color: $white;
     opacity: 0;
     z-index: 10;
@@ -108,7 +108,7 @@
     position: absolute;
     right: 1rem;
     bottom: 1rem;
-    color: $primary;
+    color: $primary400;
     font-size: 36px;
   }
 }

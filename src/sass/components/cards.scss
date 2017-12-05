@@ -1,0 +1,36 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  padding: 1rem;
+  background-color: $white;
+}
+
+.card-header {
+  padding: 0 1rem 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.card-text {
+  padding: 0 .5rem .5rem;
+  font-size: 16px;
+}
+
+@media all and (min-width: 50rem) {
+  .card {
+    margin: 1rem;
+  }
+
+  .card-header {
+    padding: 1rem;
+  }
+
+  .card-text {
+    padding: .5rem;
+  }
+}

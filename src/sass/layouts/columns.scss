@@ -1,0 +1,35 @@
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  flex: 100%;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+@media all and (min-width: 50rem) {
+  .col-3 {
+    flex: calc(33.33% - 2rem);
+    max-width: 33.33%;
+    margin: 1rem;
+  }
+
+  .col-4 {
+    flex: calc(25% - 2rem);
+    max-width: 25%;
+    margin: 1rem;
+  }
+
+  .col-5 {
+    flex: calc(20% - 2rem);
+    max-width: 20%;
+    margin: 1rem;
+  }
+
+  .col-6 {
+    flex: calc(16.67% - 2rem);
+    max-width: 16.67%;
+    margin: 1rem;
+  }
+}

@@ -3,18 +3,24 @@
 @import 'identity/typography';
 
 @import 'elements/buttons';
+@import 'elements/background';
+@import 'elements/form';
+@import 'elements/lists';
 
-@import 'components/hero';
-@import 'components/footer';
 @import 'components/logo-list';
 @import 'components/team-member';
 @import 'components/team-member-modal';
+@import 'components/cards';
 @import 'components/cta';
-@import 'components/modal';
+@import 'components/goal';
 
+@import 'compositions/hero';
 @import 'compositions/containers';
+@import 'compositions/footer';
+@import 'compositions/modal';
 
 @import 'layouts/grid';
+@import 'layouts/columns';
 
 @import 'pages/event';
 @import 'pages/single-form';

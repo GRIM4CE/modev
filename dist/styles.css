@@ -175,6 +175,18 @@ a.cta-button, a.cta-button:hover { color: #fff !important; }
   .team-member-modal-right-container { -webkit-box-flex: 1; -ms-flex: 1 50%; flex: 1 50%; padding: 1.5rem; overflow: scroll; }
   .team-member-modal-img { width: auto; height: 100%; -o-object-fit: cover; object-fit: cover; } }
 
+.solutions-container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.solution { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.solution-icon { margin-right: 1rem; font-size: 24px; }
+
+.solution-title { margin: 0; }
+
+@media all and (min-width: 37.5rem) { .solution { -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .solution-icon { font-size: 80px; }
+  .solution-title { -webkit-box-flex: 1; -ms-flex: 1 100%; flex: 1 100%; margin-top: 1rem; text-align: center; } }
+
 .card-container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
 .card { padding: 1rem; background-color: #fff; }
